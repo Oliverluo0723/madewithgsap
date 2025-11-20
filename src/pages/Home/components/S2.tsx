@@ -5,8 +5,9 @@ import SplitText from "gsap/SplitText";
 import DrawSVGPlugin from "gsap/DrawSVGPlugin";
 import { useGSAP } from "@gsap/react";
 import { useLottie } from "lottie-react";
-import jj from "./4-_-3.json";
+import jj from "@/pages/Home/components/lotties/4-_-3.json";
 import { CornerDownRight } from "lucide-react";
+import HoverAnimate from "@/components/HoverAnimate";
 
 const options = {
     animationData: jj,
@@ -91,9 +92,11 @@ function S2() {
 
             <div className="w-full h-1/2 mt-96 flex-center gap-4">
                 <CornerDownRight ref={CornerDownRightRef} size={48} />
-                <h6 className="text-6xl dm-mono underline cursor-pointer">
-                    Explore Collection
-                </h6>
+                <HoverAnimate
+                    text="  Explore Collection"
+                    as="h6"
+                    className="text-6xl dm-mono underline cursor-pointer"
+                />
             </div>
         </>
     );

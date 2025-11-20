@@ -24,6 +24,10 @@
     .d-button {
         @apply w-fit h-fit px-2 py-2 bg-[#c9ff6e];
     }
+
+    .circle {
+        @apply w-30 h-30 rounded-full bg-black/95;
+    }
 }
 
 @layer utilities {
