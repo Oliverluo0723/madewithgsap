@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-[#F1F1F1];
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 400;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+    header {
+        @apply fixed top-0 left-0 z-50 w-full h-24 p-6 flex justify-between items-center;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+}
+
+@layer components {
+    .d-button {
+        @apply w-fit h-fit px-2 py-2 bg-[#c9ff6e];
+    }
+}
+
+@layer utilities {
+    .dm-mono {
+        font-family: "DM Mono", monospace, sans-serif;
+        font-style: normal;
+    }
+
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .flex-between {
+        @apply flex justify-between items-center;
+    }
+}
