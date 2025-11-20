@@ -23,7 +23,7 @@ function Hero() {
         });
     }, []);
     return (
-        <section className="grid grid-cols-1 gap-12 mt-36 md:mt-48 lg:mt-72 lg:grid-cols-3">
+        <section className="grid grid-cols-1 gap-12 mt-36 md:mt-48 lg:mt-64 lg:grid-cols-3">
             {/* 左側文字 */}
             <p
                 ref={splitRef}
