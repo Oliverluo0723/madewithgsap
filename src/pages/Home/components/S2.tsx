@@ -56,7 +56,7 @@ function S2() {
                     y: 100,
                     autoAlpha: 0,
                     stagger: 0.05,
-                    ease: "bounce.inOut",
+                    ease: "power2.out",
                 });
             },
         });
